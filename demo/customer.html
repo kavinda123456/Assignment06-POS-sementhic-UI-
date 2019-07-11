@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+    <link rel="stylesheet"href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet"href="css/mystyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+<div class="row">
+    <div class="col-12 bg-dark text">
+        <div class="row">
+            <div class="col-2">
+                <a class="ui image text-white ">
+                    <img src="image/63_-_Call_Center-512.png" height="50" width="50"/></a>
+                <h2 style="color: white;left: 80px;position: absolute;top: 10px">POS SYSTEM</h2>
+            </div>
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-9">
+
+                            </div>
+                            <div class="col-3" style="top: 10px;left: 50px">
+                                <button class="ui circular facebook icon button">
+                                    <i class="fab fa-facebook"></i>
+                                </button>
+                                <button class="ui circular twitter icon button">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
+                                <button class="ui circular linkedin icon button">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </button>
+                                <button class="ui circular google plus icon button">
+                                    <i class="fab fa-google-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="submanu">
+
+</div>
+<div class="row">
+    <div class="col-2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ui vertical inverted menu bg-dark text-white border-0 col-md-12" style="width: 93%;position: absolute;padding-top: 15%">
+                    <a class="item text-white"href="dashboard.html">
+                        <img src="image/Combo Chart_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        Dashboard
+                    </a>
+                    <a class="item  text-white"href="customer.html">
+                        <img src="image/icons8_User_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        Customer Management</a>
+
+                    <a class="item text-white"href="item.html">
+                        <img src="image/Ingredients_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 0px"/>
+                        Item Management
+                    </a>
+                    <a class="item text-white"href="order.html">
+                        <img src="image/Shopping Cart_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        Order
+                    </a>
+                    <a class="item text-white"href="orderview.html">
+                        <img src="image/Purchase Order_48px.png" height="35" width="35" style="right: 0px;position: absolute;top: 5px"/>
+                        View Order
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-10">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8">
+                        <div style="background-color: #24344D;margin-top: 5%">
+                            <form class="ui form" style="padding: 10px">
+                                <h2 class="ui dividing header" style="color: deeppink">Customer Information</h2>
+                                <div class="field">
+                                    <div class="two fields">
+                                        <div class="field">
+                                            <label style="color: yellow">Customer ID</label>
+                                            <input type="text" name="shipping[first-name]" placeholder="ID" id="CId">
+                                        </div>
+                                        <div class="field">
+                                            <label style="color: yellow">Customer Name</label>
+                                            <input type="text" name="shipping[last-name]" placeholder="Name" id="CName">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label style="color: yellow">Address</label>
+                                    <div class="fields">
+                                        <div class="twelve wide field">
+                                            <input type="text" name="shipping[address]" placeholder="Address" id="CAddress">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <label style="color: yellow">Customer C-Limit</label>
+                                    <div class="twelve wide field">
+                                        <input type="text" name="shipping[address]" placeholder="C-limit" id="CLimit">
+                                    </div>
+
+                                </div>
+                                <div class="fields">
+                                    <div class="seven wide field">
+                                        <label style="color: yellow">Card Number</label>
+                                        <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
+                                    </div>
+                                    <div class="six wide field">
+                                        <label style="color: yellow">Date of Birth</label>
+                                        <div class="two fields">
+                                            <div class="field">
+                                                <select class="ui fluid search dropdown" name="card[expire-month]">
+                                                    <option value="">Month</option>
+                                                    <option value="1">January</option>
+                                                    <option value="2">February</option>
+                                                    <option value="3">March</option>
+                                                    <option value="4">April</option>
+                                                    <option value="5">May</option>
+                                                    <option value="6">June</option>
+                                                    <option value="7">July</option>
+                                                    <option value="8">August</option>
+                                                    <option value="9">September</option>
+                                                    <option value="10">October</option>
+                                                    <option value="11">November</option>
+                                                    <option value="12">December</option>
+                                                </select>
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="ui red  button" id="btnadd" type="button">Add</button>
+                                <button class="ui green button" id="btndelete">delete</button>
+                                <button class="ui black button" id="btnupdate">update</button>
+                                <button class="ui purple button" id="btnsearch">search</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                    <div class="ui two column grid" style="width: 670px;top: 40px;position: relative">
+                                        <div class="column">
+                                            <div class="ui raised segment">
+                                                <a class="ui red ribbon label">Overview</a>
+                                                <span>Account Details</span>
+                                                <p style="font-size: small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aspernatur atque cum deleniti et illo
+                                                    laborum magni maxime molestiae natus nesciunt pariatur, quibusdam repellat rerum sit, ullam veniam voluptatibus.</p>
+                                                <a class="ui blue ribbon label">Community</a> User Reviews
+                                                <p style="font-size:small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aspernatur atque cum deleniti et illo
+                                                    laborum magni maxime molestiae natus nesciunt pariatur, quibusdam repellat rerum sit, ullam veniam voluptatibus.</p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="col-1"></div>
+                            </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-8"style="top: 20px">
+                        <table class="ui unstackable table">
+                            <thead>
+                            <tr>
+                                <th>select</th>
+                                <th>Customer ID</th>
+                                <th>Customer Name</th>
+                                <th>Address</th>
+                                <th>C-limit</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="checkbox" name="record"></td>
+                                <td>c001</td>
+                                <td>kavinda</td>
+                                <td>beliatta</td>
+                                <td>2200</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-1"></div>
+                                    <div class="col-10">
+                                        <div class="ui card" style="bottom: 130px">
+                                            <div class="ui slide masked reveal image">
+                                                <img src="image/matthew.png" class="visible content">
+                                                <img src="image/chris.jpg" class="hidden content">
+                                            </div>
+                                            <div class="content">
+                                                <a class="header">Customer Profile</a>
+                                                <div class="meta">
+                                                    <button class="ui primary button" style="left: 25%;position: relative">
+                                                       View Profile
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/myjs.js"></script>
+</body>
+</html>
